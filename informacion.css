@@ -63,6 +63,18 @@ html, body {
     object-fit: contain;
 }
 
+.btn-volver {
+    position: fixed;
+    top: 10px; /* 10px desde la parte superior */
+    left: 10px; /* 10px desde la parte izquierda */
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
     .info-section {
@@ -73,6 +85,8 @@ html, body {
     .feature-card {
         padding: 15px;
         margin-bottom: 20px; /* Espaciado entre tarjetas */
+        width: 80%;
+        height: auto;
     }
 
     .feature-title {
@@ -92,4 +106,10 @@ html, body {
     .feature-icon {
         font-size: 1.8rem; /* Ajusta el tamaño en dispositivos móviles */
     }
+
+    .btn-volver {
+        top: 10px; /* Asegura que se mantenga en la parte superior */
+        left: 10px; /* Se mantiene en la esquina superior izquierda */
+    }
 }
+
